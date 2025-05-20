@@ -4,7 +4,7 @@ Analyze how every **Canadian NHL club** turns shots into momentum — and explor
 
 ---
 
-## 1Quick‑Start
+## 1) Quick‑Start
 
 ```bash
 # clone & set up
@@ -28,7 +28,7 @@ make app      # launches Streamlit on http://localhost:8501
 
 ---
 
-## 2Project Layout
+## 2) Project Layout
 
 ```
 .
@@ -48,7 +48,7 @@ make app      # launches Streamlit on http://localhost:8501
 
 ---
 
-## 3Data Sources (100% Free)
+## 3) Data Sources (100% Free)
 
 | Source                 | What we pull                                                              | Link                                                                                           |
 | ---------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -59,7 +59,7 @@ Season key is set in `src/ingest.py` (default **2023‑2024** so every Canadian 
 
 ---
 
-## 4Model Pipeline
+## 4) Model Pipeline
 
 1. **Pre‑processing** (`ColumnTransformer`)
 
@@ -84,7 +84,7 @@ ElasticNet : 0.41 ± 0.01
 
 ---
 
-## 5Streamlit Dashboard
+## 5) Streamlit Dashboard
 
 * **Shot Map** – rink‑normalised coordinates for the selected team, coloured by density.
 * **Predicted ΔxG Histogram** – model’s expected goal differential in the 25s after each shot.
@@ -94,7 +94,7 @@ ElasticNet : 0.41 ± 0.01
 
 ---
 
-## 6Extending the Project
+## 6) Extending the Project
 
 * **Add live win‑prob:** call MoneyPuck live JSON and update Streamlit every 10s.
 * **Player leaderboards:** aggregate `xGD_shift` by `shooterPlayerId` to rank transition drivers.
@@ -104,6 +104,6 @@ PRs welcome— open an issue or ping @your‑handle.
 
 ---
 
-## 7License
+## 7) License
 
 *Code* is MIT. *MoneyPuck data* is free for non‑commercial use with attribution—see [https://moneypuck.com](https://moneypuck.com).
